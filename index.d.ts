@@ -47,5 +47,9 @@ export type Coordinate = {
 };
 
 export type BikeRides4UEvent = RawEvent & {
-  latLng: Coordinate;
+  geoLookup: {
+    latLng: Coordinate;
+    formattedAddress: string;
+  };
+  updated: number;
 };
